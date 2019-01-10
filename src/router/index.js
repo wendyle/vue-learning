@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Operation from '../layout/operation.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      redirect: '/operation'
+    },
+    {
+      path: '/operation',
+      name: 'operation',
+      component: Operation
     }
   ]
 })
+
+export default router
