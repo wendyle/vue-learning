@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import store from './store'
 import router from './router'
-
+import 'iview/dist/styles/iview.css'
+import 'loaders.css/loaders.min.css'
+import 'vue2-scrollbar/dist/style/vue2-scrollbar.css'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
