@@ -1,6 +1,8 @@
 <template>
   <div class="main">
-    <div class="header"></div>
+    <div class="header">
+      <top-header></top-header>
+    </div>
     <div class="body">
       <div class="left"></div>
       <div class="right">
@@ -17,8 +19,9 @@
 
 <script>
 import StreamList from './stream-list'
+import TopHeader from '@/views/top-header'
 export default {
-  components: { StreamList }
+  components: { StreamList, TopHeader }
 }
 </script>
 
